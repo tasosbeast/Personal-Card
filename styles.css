@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Tasos;
+    src: url(/fonts/ldr-kaet.regular.ttf);
+}
+
+
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Tasos, serif;
+    background-image: url('/images/v1013-p-0024a.jpg');
+    background-size:cover;
+          -webkit-animation: slidein 5s;
+          animation: slidein 5s;
+  
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  
+          -webkit-animation-direction: alternate;
+          animation-direction: alternate;              
+  }
+  
+  @-webkit-keyframes slidein {
+  from {background-position: top; background-size:2000px; }
+  to {background-position: -100px 0px;background-size:2150px;}
+  }
+  
+  @keyframes slidein {
+  from {background-position: top; background-size:2000px; }
+  to {background-position: -100px 0px;background-size:1750px;}
+  
+  }
+
+
+.avatar {
+    width: 250px;
+    border-radius: 10px;
+    border-right: 6px solid #E76F51;
+    border-left: 6px solid #E76F51;
+    box-shadow: 13px 16px 22px 1px rgba(0,0,0,0.71), inset 0px 0px 25px -2px rgba(0,0,0,0.74);
+}
+
+.avatar:hover {
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.card {
+    width: 500px;
+    margin: 30vh auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #F4A261;
+    color: #264653;
+    border-right: 6px solid #E76F51;
+    border-left: 6px solid #E76F51;
+    border-radius: 20px;
+    box-shadow: 13px 16px 22px 1px rgba(0,0,0,0.71), inset 0px 0px 25px -2px rgba(0,0,0,0.74);
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+
+
+
+.content h3{
+    font-size: 3rem;
+    margin: 0;
+    
+}
+
+.content p {
+    font-size: 1.5rem;
+    
+}
+
+.content h3:hover, .content p:hover, .content h4:hover {
+    color: #000000;
+    transition: color 0.5s ease-in-out;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.content h3, .content p, .content h4 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+   -moz-background-clip: text;
+   -webkit-background-clip: text;
+}
+
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
